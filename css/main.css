@@ -171,6 +171,15 @@ div.modal {
   position: absolute;
   z-index: 2;
   top: 1320px;
+  animation: animate;
+  animation-duration: 0.8ms;
+}
+div.modal .fechar {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border-radius: 50%;
+  float: right;
 }
 div.modal .conteiner {
   background-color: white;
