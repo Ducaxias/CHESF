@@ -113,7 +113,51 @@ main div.Informacao section article ul li {
   text-align: justify;
   margin: 20px 0px;
 }
-main div.FormularioVisitação {
+main div.Visite-nos {
+  width: 1300px;
+  height: 720px;
+}
+main div.Visite-nos section {
+  position: relative;
+  margin: 0 50px;
+}
+main div.Visite-nos section h1 {
+  font: 32px;
+  font-weight: 600px;
+}
+main div.Visite-nos section article {
+  width: 1200px;
+}
+main div.Visite-nos section article p {
+  font-size: 20px;
+  text-indent: 20px;
+  text-align: justify;
+  margin: 25px 0px;
+}
+main div.Visite-nos section article p a {
+  color: cornflowerblue;
+}
+main div.Visite-nos section article ul {
+  list-style: none;
+}
+main div.Visite-nos section article ul li {
+  font-size: 20px;
+  text-align: justify;
+  margin: 20px 0px;
+}
+main div.Visite-nos section article button {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 5px;
+  background-color: cornflowerblue;
+  cursor: pointer;
+}
+main div.Visite-nos section article button:hover {
+  background-color: navy;
+  color: white;
+}
+main div.Visite-nos section.FormularioVisitação {
   width: 1300px;
   height: 720px;
   background-color: white;
@@ -121,17 +165,17 @@ main div.FormularioVisitação {
   justify-content: center;
   align-items: center;
 }
-main div.FormularioVisitação .content {
+main div.Visite-nos section.FormularioVisitação .content {
   background-color: white;
   border-radius: 10px;
   min-width: 30%;
   overflow: auto;
 }
-main div.FormularioVisitação .content h1 {
+main div.Visite-nos section.FormularioVisitação .content h1 {
   text-align: center;
   margin-bottom: 12px;
 }
-main div.FormularioVisitação .content form {
+main div.Visite-nos section.FormularioVisitação .content form {
   display: flex;
   flex-direction: column;
   padding: 12px;
@@ -141,7 +185,7 @@ main div.FormularioVisitação .content form {
   width: 400px;
   height: 600px;
 }
-main div.FormularioVisitação .content form .inputs {
+main div.Visite-nos section.FormularioVisitação .content form .inputs {
   padding: 8px 5px;
   box-sizing: border-box;
   border-radius: 5px;
@@ -150,10 +194,10 @@ main div.FormularioVisitação .content form .inputs {
   width: 100%;
   transition: 0.3s;
 }
-main div.FormularioVisitação .content form .inputs:focus {
+main div.Visite-nos section.FormularioVisitação .content form .inputs:focus {
   border-color: navy;
 }
-main div.FormularioVisitação .content form button {
+main div.Visite-nos section.FormularioVisitação .content form button {
   padding: 12px;
   font-size: 16px;
   border-radius: 5px;
@@ -161,36 +205,35 @@ main div.FormularioVisitação .content form button {
   background-color: cornflowerblue;
   cursor: pointer;
 }
-main div.FormularioVisitação .content form button:hover {
+main div.Visite-nos section.FormularioVisitação .content form button:hover {
   background-color: navy;
   color: white;
 }
-main div.FormularioVisitação .content form .span-requerimentos {
+main div.Visite-nos section.FormularioVisitação .content form .span-requerimentos {
   display: none;
 }
-
-footer {
+main div footer {
   width: 1346px;
   height: 230px;
   background: cornflowerblue;
 }
-footer div {
+main div footer div {
   width: 400px;
   height: 85px;
   position: relative;
   bottom: -50px;
   left: 30px;
 }
-footer div.Ideal .logo {
+main div footer div.Ideal .logo {
   font-size: 36px;
   font-weight: 600;
   color: white;
 }
-footer div.Ideal p {
+main div footer div.Ideal p {
   font-size: 20px;
   color: white;
 }
-footer div.Direitos {
+main div footer div.Direitos {
   width: 400px;
   height: 10px;
   font-size: 10px;
