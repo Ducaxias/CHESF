@@ -1,0 +1,256 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  width: 1350;
+  height: 80px;
+  background: white;
+  position: sticky;
+  transition: background-color 0.4s ease-in-out;
+}
+header nav {
+  position: flex;
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 1300px;
+  height: 48px;
+}
+header nav .nav-links ul {
+  display: flex;
+  list-style: none;
+  position: relative;
+  top: -15;
+}
+header nav .nav-links ul li {
+  margin: 0 25px;
+}
+header nav .nav-links ul li a {
+  font-weight: 600;
+}
+header nav .nav-links ul li a:hover {
+  color: cornflowerblue;
+}
+header nav a {
+  color: black;
+  text-transform: uppercase;
+}
+header nav a.logo {
+  position: relative;
+  top: -10px;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0px 0px 0px 20px;
+}
+
+main {
+  width: 1250px;
+  height: 2160px;
+  background: white;
+  z-index: 0;
+}
+main div.Inicio {
+  width: 1300;
+  height: 570px;
+}
+main div.Inicio section {
+  position: relative;
+  top: 350px;
+  margin: 0 50px;
+}
+main div.Inicio section h1 {
+  font: 32px;
+  font-weight: 600px;
+}
+main div.Inicio section article {
+  width: 1200px;
+}
+main div.Inicio section article p {
+  font-size: 20px;
+  text-indent: 20px;
+  text-align: justify;
+  margin: 25px 0px;
+}
+main div.Inicio section article p a {
+  color: cornflowerblue;
+}
+main div.Informacao {
+  width: 1300px;
+  height: 720px;
+}
+main div.Informacao section {
+  position: relative;
+  margin: 0 50px;
+}
+main div.Informacao section h1 {
+  font: 32px;
+  font-weight: 600px;
+}
+main div.Informacao section article {
+  width: 1200px;
+}
+main div.Informacao section article p {
+  font-size: 20px;
+  text-indent: 20px;
+  text-align: justify;
+  margin: 25px 0px;
+}
+main div.Informacao section article p a {
+  color: cornflowerblue;
+}
+main div.Informacao section article ul {
+  list-style: none;
+}
+main div.Informacao section article ul li {
+  font-size: 20px;
+  text-align: justify;
+  margin: 20px 0px;
+}
+main div.Visite-nos {
+  width: 1300px;
+  height: 720px;
+}
+main div.Visite-nos section {
+  position: relative;
+  margin: 0 50px;
+}
+main div.Visite-nos section h1 {
+  font: 32px;
+  font-weight: 600px;
+}
+main div.Visite-nos section article {
+  width: 1200px;
+}
+main div.Visite-nos section article p {
+  font-size: 20px;
+  text-indent: 20px;
+  text-align: justify;
+  margin: 25px 0px;
+}
+main div.Visite-nos section article p a {
+  color: cornflowerblue;
+}
+main div.Visite-nos section article ul {
+  list-style: none;
+}
+main div.Visite-nos section article ul li {
+  font-size: 20px;
+  text-align: justify;
+  margin: 20px 0px;
+}
+main div.Visite-nos section article button {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 5px;
+  background-color: cornflowerblue;
+  cursor: pointer;
+  position: absolute;
+  top: 120px;
+  left: 500px;
+}
+main div.Visite-nos section article button:hover {
+  background-color: navy;
+  color: white;
+}
+
+div.modal {
+  width: 1346px;
+  height: 720px;
+  background-color: transparent;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  top: 1320px;
+}
+div.modal .conteiner {
+  background-color: white;
+  border-radius: 10px;
+  min-width: 30%;
+  overflow: auto;
+  z-index: 1000;
+}
+div.modal .conteiner h1 {
+  text-align: center;
+  margin-bottom: 12px;
+}
+div.modal .conteiner form {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  gap: 12px;
+  border: 2px solid cornflowerblue;
+  border-radius: 10px;
+  width: 400px;
+  height: 600px;
+}
+div.modal .conteiner form .inputs {
+  padding: 8px 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 2px solid cornflowerblue;
+  color: black;
+  width: 100%;
+  transition: 0.3s;
+}
+div.modal .conteiner form .inputs:focus {
+  border-color: navy;
+}
+div.modal .conteiner form button {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 5px;
+  background-color: cornflowerblue;
+  cursor: pointer;
+}
+div.modal .conteiner form button:hover {
+  background-color: navy;
+  color: white;
+}
+div.modal .conteiner form .span-requerimentos {
+  display: none;
+}
+
+footer {
+  width: 1349px;
+  height: 249px;
+  background: cornflowerblue;
+}
+footer div {
+  width: 400px;
+  height: 85px;
+  position: relative;
+  bottom: -50px;
+  left: 30px;
+}
+footer div.Ideal .logo {
+  font-size: 36px;
+  font-weight: 600;
+  color: white;
+}
+footer div.Ideal p {
+  font-size: 20px;
+  color: white;
+}
+footer div.Direitos {
+  width: 400px;
+  height: 10px;
+  font-size: 10px;
+  font-weight: 300;
+  color: white;
+  position: relative;
+  bottom: -110px;
+  left: 550px;
+}
+
+/*# sourceMappingURL=main.css.map */

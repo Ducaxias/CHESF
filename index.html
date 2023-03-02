@@ -1,126 +1,183 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--CSS-->
+    <link rel="stylesheet" href="css/main.css" />
+    <!--JS-->
+    <script src="js/script.js"></script>
     <!--Box icons-->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <!--Gogle-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <!---->
     <title>CHESF</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="BarradeNavegação">
-            <a href="#" class="logo">CHESF</a>
-            <div class="nav-links">  
-                <ul class="links">
-                    <li><a href="#00">Início</a></li>
-                    <li><a href="#01">Informações</a></li>
-                    <li><a href="#02">Visite-nos</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav class="BarradeNavegação">
+        <a href="#" class="logo">CHESF</a>
+        <div class="nav-links">
+          <ul class="links">
+            <li><a href="#00">Início</a></li>
+            <li><a href="#01">Informações</a></li>
+            <li><a href="#02">Visite-nos</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main>
-        <div class="Inicio" id="00">
-            <section>
-                <h1>Sobre Nós</h1>
-                <article>
-                    <p>A Chesf (Companhia Hidro Elétrica do São Francisco) é uma empresa brasileira, vinculada ao <a href="https://www.gov.br/mme/pt-br" class="link_MME"> Ministério de Minas e Energia</a>, responsável pela geração, transmissão e distribuição de energia elétrica no Nordeste do Brasil. A empresa foi fundada em 1949 e atua principalmente nas regiões do Nordeste, Centro-Oeste e Sudeste.</p>
-                </article>
-            </section>
+      <div class="Inicio" id="00">
+        <section>
+          <h1>Sobre Nós</h1>
+          <article>
+            <p>
+              A Chesf (Companhia Hidro Elétrica do São Francisco) é uma empresa
+              brasileira, vinculada ao
+              <a href="https://www.gov.br/mme/pt-br" class="link_MME">
+                Ministério de Minas e Energia</a
+              >, responsável pela geração, transmissão e distribuição de energia
+              elétrica no Nordeste do Brasil. A empresa foi fundada em 1949 e
+              atua principalmente nas regiões do Nordeste, Centro-Oeste e
+              Sudeste.
+            </p>
+          </article>
+        </section>
+      </div>
+      <div class="Informacao" id="01">
+        <section>
+          <h1>Informações</h1>
+          <article>
+            <p>
+              A primeira usina hidrelétrica construída pela Chesf foi a Usina
+              Hidrelétrica de Paulo Afonso, situada no rio São Francisco. Esta
+              usina foi inaugurada em 1951 e foi a primeira usina hidrelétrica
+              do Nordeste do Brasil. A partir daí, a Chesf construiu e gerenciou
+              uma série de outras usinas hidrelétricas na região, incluindo a
+              Usina Hidrelétrica de Xingó e a Usina Hidrelétrica de Sobradinho.
+            </p>
+          </article>
+          <h1>Projetos</h1>
+          <article>
+            <p>Dentre os princípais projetos da CHESF estão:</p>
+            <ul class="ListaProjetos">
+              <li>
+                1. Ampliação de usinas hidrelétricas existentes: A Chesf tem
+                investido na ampliação de suas usinas hidrelétricas existentes,
+                a fim de aumentar sua capacidade de geração de energia.
+              </li>
+              <li>
+                2. Investimentos em energias renováveis: A Chesf tem investido
+                em fontes de energia renovável, como energia solar e eólica,
+                para ampliar sua matriz energética e reduzir o impacto ambiental
+                de suas atividades.
+              </li>
+              <li>
+                3. Melhoria da rede de transmissão de energia: A Chesf tem
+                trabalhado para melhorar sua rede de transmissão de energia, a
+                fim de garantir a continuidade e a qualidade do fornecimento de
+                energia elétrica para todos os seus clientes.
+              </li>
+              <li>
+                4. Projetos de saneamento básico: A Chesf tem desenvolvido
+                projetos de saneamento básico em comunidades próximas.
+              </li>
+            </ul>
+          </article>
+        </section>
+      </div>
+      <div class="Visite-nos" id="02">
+        <div>
+          <section>
+            <h1>Para Visitação</h1>
+            <article>
+              <p>
+                Para realizar a visitação em alguma das unidades da CHESF
+                espalhadas pelo país. Preencha o formulário de cadastro.
+              </p>
+              <br />
+              <button onclick="acao()">Formulário</button>
+              <p>
+                Após finalizar o processo fique de olho na
+                <a href="#">pagina de visitação</a>.
+              </p>
+              <h1>Regras</h1>
+              <p>Seguem as regras de visitação:</p>
+              <ul class="ListaRegras">
+                <li>1. A utilização de DRONES na área do Parque é proibida.</li>
+                <li>
+                  2. A visita com animais domésticos (cães, gatos e outros) é
+                  proibida.
+                </li>
+                <li>
+                  3. Os visitantes somente devem estacionar e manter-se nas
+                  áreas de visitação regular.
+                </li>
+                <li>
+                  4. Os visitantes somente devem estacionar e manter-se nas
+                  áreas de visitação regular.
+                </li>
+                <li>
+                  5. A visitação poderá ser interrompida, a qualquer tempo, sem
+                  prévio aviso, em função de restrições ao tráfego na estrada de
+                  acesso, medidas sanitárias ou outros motivos de força maior,
+                  que podem afetar inclusive as reservas já confirmadas.
+                </li>
+              </ul>
+            </article>
+          </section>
         </div>
-        <div class="Informacao" id="01">
-            <section>
-                <h1>Informações</h1>
-                <article>
-                    <p>A primeira usina hidrelétrica construída pela Chesf foi a Usina Hidrelétrica de Paulo Afonso, situada no rio São Francisco. Esta usina foi inaugurada em 1951 e foi a primeira usina hidrelétrica do Nordeste do Brasil. A partir daí, a Chesf construiu e gerenciou uma série de outras usinas hidrelétricas na região, incluindo a Usina Hidrelétrica de Xingó e a Usina Hidrelétrica de Sobradinho.</p>
-                </article>
-                <h1>Projetos</h1>
-                <article>
-                   <p>Dentre os princípais projetos da CHESF estão:</p>
-                    <ul class="ListaProjetos">
-                        <li>1. Ampliação de usinas hidrelétricas existentes: A Chesf tem investido na ampliação de suas usinas hidrelétricas existentes, a fim de aumentar sua capacidade de geração de energia. </li>
-                        <li>2. Investimentos em energias renováveis: A Chesf tem investido em fontes de energia renovável, como energia solar e eólica, para ampliar sua matriz energética e reduzir o impacto ambiental de suas atividades.</li>
-                        <li>3. Melhoria da rede de transmissão de energia: A Chesf tem trabalhado para melhorar sua rede de transmissão de energia, a fim de garantir a continuidade e a qualidade do fornecimento de energia elétrica para todos os seus clientes.</li>
-                        <li>4. Projetos de saneamento básico: A Chesf tem desenvolvido projetos de saneamento básico em comunidades próximas.</li>
-                    </ul>
-                </article>
-            </section>
-        </div>
-        <div class="Visite-nos" id="02">
-            <div>
-                <section>
-                    <h1>Para Visitação</h1>
-                    <article>
-                        <p>
-                            Para realizar a visitação em alguma das unidades da CHESF espalhadas
-                            pelo país. Preencha o formulário de cadastro.
-                        </p>
-                        <button>Formulário</button>
-                        <p>Após finalizar o processo fique de olho na <a href="#">pagina de visitação</a>.</p>
-                        <h1>Regras</h1>
-                        <p>Seguem as regras de visitação:</p>
-                        <ul class="ListaRegras">
-                            <li>1. A utilização de DRONES na área do Parque é proibida. </li>
-                            <li>2. A visita com animais domésticos (cães, gatos e outros) é proibida.</li>
-                            <li>3. Os visitantes somente devem estacionar e manter-se nas áreas de visitação regular.</li>
-                            <li>4. Os visitantes somente devem estacionar e manter-se nas áreas de visitação regular.</li>
-                            <li>5. A visitação poderá ser interrompida, a qualquer tempo, sem prévio aviso, em função de 
-                                restrições ao tráfego na estrada de acesso, medidas sanitárias ou outros motivos de força maior, 
-                                que podem afetar inclusive as reservas já confirmadas.</li>
-                        </ul>
-                    </article>       
-                </section>
-            </div>
-            <dialog>            
-                <div class="content">
-                    <h1>Formulário</h1>
-                    <form>
-                        <div>
-                            <input type="text" placeholder="Digite seu nome" class="inputs">
-                            <span class="span-requerimentos">Preciso de no mínimo 3 caracteres</span>
-
-                        </div>
-                        <div>
-                            <input type="email" placeholder="Digite seu email" class="inputs">
-                            <span class="span-requerimentos">Digite um email válido</span>
-                        </div>
-                        <div>
-                            <input type="password" placeholder="Digite sua senha" class="inputs">
-                            <span class="span-requerimentos">Use uma senha de no mínimo 6 caracteres</span>
-                        </div>
-                        <div>
-                            <input type="password" placeholder="Repita a senha" class="inputs">
-                            <span class="span-requerimentos">As senhas devem ser iguais.</span>
-                        </div>
-                        <textarea name="descrição" id="#02.1" cols="30" rows="10" class="inputs" placeholder="Detalhes gerais da acerca da visita"></textarea>
-                        <div class="daata">
-                            <p>Selecione uma data</p>
-                            <datagrid>
-                                <input id="date" type="date" class="inputs">
-                            </datagrid>
-                        </div>
-                        <button type="submit">Enviar</button>
-                    </form>
-                </div>
-            </dialog>
-        </div>
+      </div>
     </main>
+    <div class="modal">
+        <div class="conteiner">
+            <h1>Formulário</h1>
+            <form>
+                <div>
+                    <input type="text" placeholder="Digite seu nome" class="inputs">
+                    <span class="span-requerimentos">Preciso de no mínimo 3 caracteres</span>
+                </div>
+                <div>
+                    <input type="email" placeholder="Digite seu email" class="inputs">
+                    <span class="span-requerimentos">Digite um email válido</span>
+                </div>
+                <div>
+                    <input type="password" placeholder="Digite sua senha" class="inputs">
+                    <span class="span-requerimentos">Use uma senha de no mínimo 6 caracteres</span>
+                </div>
+                <div>
+                    <input type="password" placeholder="Repita a senha" class="inputs">
+                    <span class="span-requerimentos">As senhas devem ser iguais.</span>
+                </div>
+                <textarea name="descrição" id="#02.1" cols="30" rows="10" class="inputs" placeholder="Detalhes gerais da acerca da visita"></textarea>
+                <div class="daata">
+                    <p>Selecione uma data</p>
+                    <datagrid>
+                        <input id="date" type="date" class="inputs">
+                    </datagrid>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
     <footer>
-        <div class="Ideal">
-            <p class="logo">CHESF</p>
-            <p>Abastecendo as casas de todo Brasil.</p>
-        </div>
-        <div class="Direitos">
-            <p>Todos os direitos resevados a Eduardo Caxias© 2023.</p>
-        </div>
-    </footer>   
-</body>
+      <div class="Ideal">
+        <p class="logo">CHESF</p>
+        <p>Abastecendo as casas de todo Brasil.</p>
+      </div>
+      <div class="Direitos">
+        <p>Todos os direitos resevados a Eduardo Caxias© 2023.</p>
+      </div>
+    </footer>
+  </body>
 </html>
