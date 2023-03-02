@@ -1,13 +1,3 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  outline: none;
-  border: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
 header {
   width: 1350;
   height: 80px;
@@ -161,6 +151,38 @@ main div.Visite-nos section article button:hover {
   color: white;
 }
 
+footer {
+  width: 1349px;
+  height: 249px;
+  background: cornflowerblue;
+}
+footer div {
+  width: 400px;
+  height: 85px;
+  position: relative;
+  bottom: -50px;
+  left: 30px;
+}
+footer div.Ideal .logo {
+  font-size: 36px;
+  font-weight: 600;
+  color: white;
+}
+footer div.Ideal p {
+  font-size: 20px;
+  color: white;
+}
+footer div.Direitos {
+  width: 400px;
+  height: 10px;
+  font-size: 10px;
+  font-weight: 300;
+  color: white;
+  position: relative;
+  bottom: -110px;
+  left: 550px;
+}
+
 div.modal {
   width: 1346px;
   height: 720px;
@@ -235,36 +257,14 @@ div.modal .conteiner form .span-requerimentos {
   display: none;
 }
 
-footer {
-  width: 1349px;
-  height: 249px;
-  background: cornflowerblue;
-}
-footer div {
-  width: 400px;
-  height: 85px;
-  position: relative;
-  bottom: -50px;
-  left: 30px;
-}
-footer div.Ideal .logo {
-  font-size: 36px;
-  font-weight: 600;
-  color: white;
-}
-footer div.Ideal p {
-  font-size: 20px;
-  color: white;
-}
-footer div.Direitos {
-  width: 400px;
-  height: 10px;
-  font-size: 10px;
-  font-weight: 300;
-  color: white;
-  position: relative;
-  bottom: -110px;
-  left: 550px;
+* {
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 /*# sourceMappingURL=main.css.map */
