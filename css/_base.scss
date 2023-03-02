@@ -1,136 +1,173 @@
 main {
-    width: 1250px;
+  width: 1250px;
+  height: 2160px;
+  background: white;
+  z-index: 0;
+
+  div {
+    &.Inicio {
+      width: 1300;
+      height: calc(720px - 150px);
+
+      section {
+        position: relative;
+        top: 350px;
+        margin: 0 50px;
+
+        h1 {
+          font: 32px;
+          font-weight: 600px;
+        }
+
+        article {
+          width: 1200px;
+
+          p {
+            font-size: 20px;
+            text-indent: 20px;
+            text-align: justify;
+            margin: 25px 0px;
+
+            a {
+              color: cornflowerblue;
+            }
+          }
+        }
+      }
+    }
+
+    &.Informacao {
+      width: 1300px;
+      height: 720px;
+
+      section {
+        position: relative;
+        margin: 0 50px;
+
+        h1 {
+          font: 32px;
+          font-weight: 600px;
+        }
+
+        article {
+          width: 1200px;
+
+          p {
+            font-size: 20px;
+            text-indent: 20px;
+            text-align: justify;
+            margin: 25px 0px;
+
+            a {
+              color: cornflowerblue;
+            }
+          }
+
+          ul {
+            list-style: none;
+
+            li {
+              font-size: 20px;
+              text-align: justify;
+              margin: 20px 0px;
+            }
+          }
+        }
+      }
+    }
+
+    &.Visite-nos {
+      width: 1300px;
+      height: 720px;
+
+      section {
+        position: relative;
+        margin: 0 50px;
+
+        h1 {
+          font: 32px;
+          font-weight: 600px;
+        }
+
+        article {
+          width: 1200px;
+
+          p {
+            font-size: 20px;
+            text-indent: 20px;
+            text-align: justify;
+            margin: 25px 0px;
+
+            a {
+              color: cornflowerblue;
+            }
+          }
+
+          ul {
+            list-style: none;
+
+            li {
+              font-size: 20px;
+              text-align: justify;
+              margin: 20px 0px;
+            }
+          }
+
+          button {
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 5px;
+            background-color: cornflowerblue;
+            cursor: pointer;
+            position: absolute;
+            top: 120px;
+            left: 500px;
+
+            &:hover {
+              background-color: navy;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    width: 870px;
     height: 2160px;
-    background: white;
-    z-index: 0;
 
     div {
-        &.Inicio {
-            width: 1300;
-            height: calc(720px - 150px);
+      &.Inicio {
+        width: 870px;
 
-            section {
-                position: relative;
-                top: 350px;
-                margin: 0 50px;
-
-                h1 {
-                    font: 32px;
-                    font-weight: 600px;
-                }
-
-                article {
-                    width: 1200px;
-
-                    p {
-                        font-size: 20px;
-                        text-indent: 20px;
-                        text-align: justify;
-                        margin: 25px 0px;
-
-                        a {
-                            color: cornflowerblue;
-                        }
-                    }
-                }
-            }
+        section {
+          article {
+            width: 850px;
+          }
         }
-
-        &.Informacao {
-            width: 1300px;
-            height: 720px;
-
-            section {
-                position: relative;
-                margin: 0 50px;
-
-                h1 {
-                    font: 32px;
-                    font-weight: 600px;
-                }
-
-                article {
-                    width: 1200px;
-
-                    p {
-                        font-size: 20px;
-                        text-indent: 20px;
-                        text-align: justify;
-                        margin: 25px 0px;
-
-                        a {
-                            color: cornflowerblue;
-                        }
-                    }
-
-                    ul {
-                        list-style: none;
-
-                        li {
-                            font-size: 20px;
-                            text-align: justify;
-                            margin: 20px 0px;
-                        }
-                    }
-                }
-            }
+      }
+      &.Informacao{
+        width: 870px;
+        height: 800px;
+        section {
+          article {
+            width: 850px;
+          }
         }
+      }
+      &.Visite-nos{
+        width: 870px;
 
-        &.Visite-nos {
-            width: 1300px;
-            height: 720px;
-
-            section {
-                position: relative;
-                margin: 0 50px;
-
-                h1 {
-                    font: 32px;
-                    font-weight: 600px;
-                }
-
-                article {
-                    width: 1200px;
-
-                    p {
-                        font-size: 20px;
-                        text-indent: 20px;
-                        text-align: justify;
-                        margin: 25px 0px;
-
-                        a {
-                            color: cornflowerblue;
-                        }
-                    }
-
-                    ul {
-                        list-style: none;
-
-                        li {
-                            font-size: 20px;
-                            text-align: justify;
-                            margin: 20px 0px;
-                        }
-                    }
-
-                    button {
-                        padding: 12px;
-                        font-size: 16px;
-                        border-radius: 5px;
-                        margin-top: 5px;
-                        background-color: cornflowerblue;
-                        cursor: pointer;
-                        position: absolute;
-                        top: 120px;
-                        left: 500px;
-
-                        &:hover {
-                            background-color: navy;
-                            color: white;
-                        }
-                    }
-                }
-            }
+        section {
+          article {
+            width: 850px;
+          }
         }
+      }
     }
+  }
 }

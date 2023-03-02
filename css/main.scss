@@ -1,4 +1,4 @@
-@import 'header','base','footer','formulario','responsividade';
+@import 'header','base','footer','formulario','responsividade','animação';
 
 * {
     margin: 0px;
@@ -8,6 +8,7 @@
     text-decoration: none;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    text-rendering: optimizeLegibility;
 }
 
 

@@ -35,3 +35,20 @@ footer {
         }
     }
 }
+
+@media (max-width: 1024px) {
+   footer{
+       width: 1024px;
+   
+       &.Direitos {
+        width: 100px;
+        height: 10px;
+        font-size: 10px;
+        font-weight: 300;
+        color: white;
+        position: relative;
+        bottom: -110px;
+        left: 150px;
+        }  
+    }
+}

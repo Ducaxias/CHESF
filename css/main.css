@@ -40,6 +40,15 @@ header nav a.logo {
   margin: 0px 0px 0px 20px;
 }
 
+@media (max-width: 1024px) {
+  header {
+    width: 870px;
+  }
+  header nav {
+    width: 980px;
+    margin: 20px;
+  }
+}
 main {
   width: 1250px;
   height: 2160px;
@@ -151,6 +160,31 @@ main div.Visite-nos section article button:hover {
   color: white;
 }
 
+@media (min-width: 1024px) {
+  main {
+    width: 870px;
+    height: 2160px;
+  }
+  main div.Inicio {
+    width: 870px;
+  }
+  main div.Inicio section article {
+    width: 850px;
+  }
+  main div.Informacao {
+    width: 870px;
+    height: 800px;
+  }
+  main div.Informacao section article {
+    width: 850px;
+  }
+  main div.Visite-nos {
+    width: 870px;
+  }
+  main div.Visite-nos section article {
+    width: 850px;
+  }
+}
 footer {
   width: 1349px;
   height: 249px;
@@ -183,6 +217,21 @@ footer div.Direitos {
   left: 550px;
 }
 
+@media (max-width: 1024px) {
+  footer {
+    width: 1024px;
+  }
+  footer.Direitos {
+    width: 100px;
+    height: 10px;
+    font-size: 10px;
+    font-weight: 300;
+    color: white;
+    position: relative;
+    bottom: -110px;
+    left: 150px;
+  }
+}
 div.modal {
   width: 1346px;
   height: 720px;
@@ -193,8 +242,6 @@ div.modal {
   position: absolute;
   z-index: 2;
   top: 1320px;
-  animation: animate;
-  animation-duration: 0.8ms;
 }
 div.modal .conteiner {
   background-color: white;
@@ -257,6 +304,19 @@ div.modal .conteiner form .span-requerimentos {
   display: none;
 }
 
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60, 0);
+  }
+  to {
+    opacity: 1;
+  }
+}
+div.modal {
+  animation: modal 0.3s;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -265,6 +325,7 @@ div.modal .conteiner form .span-requerimentos {
   text-decoration: none;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  text-rendering: optimizeLegibility;
 }
 
 /*# sourceMappingURL=main.css.map */
