@@ -174,13 +174,6 @@ div.modal {
   animation: animate;
   animation-duration: 0.8ms;
 }
-div.modal .fechar {
-  width: 30px;
-  height: 30px;
-  background-color: red;
-  border-radius: 50%;
-  float: right;
-}
 div.modal .conteiner {
   background-color: white;
   border-radius: 10px;
@@ -214,17 +207,29 @@ div.modal .conteiner form .inputs {
 div.modal .conteiner form .inputs:focus {
   border-color: navy;
 }
-div.modal .conteiner form button {
+div.modal .conteiner form button.enviar {
   padding: 12px;
   font-size: 16px;
   border-radius: 5px;
   margin-top: 5px;
   background-color: cornflowerblue;
+  color: white;
   cursor: pointer;
 }
-div.modal .conteiner form button:hover {
+div.modal .conteiner form button.enviar:hover {
   background-color: navy;
+}
+div.modal .conteiner form button.fechar {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 5px;
+  background-color: red;
   color: white;
+  cursor: pointer;
+}
+div.modal .conteiner form button.fechar:hover {
+  background-color: rgb(196, 4, 4);
 }
 div.modal .conteiner form .span-requerimentos {
   display: none;

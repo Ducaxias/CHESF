@@ -207,13 +207,6 @@ div.modal {
     animation: animate;
     animation-duration: 0.8ms;
 
-    .fechar {
-        width: 30px;
-        height: 30px;
-        background-color: red;
-        border-radius: 50%;
-        float: right;
-    }
 
     .conteiner {
         background-color: white;
@@ -252,18 +245,35 @@ div.modal {
             }
 
             button {
-                padding: 12px;
-                font-size: 16px;
-                border-radius: 5px;
-                margin-top: 5px;
-                background-color: cornflowerblue;
-                cursor: pointer;
-
-                &:hover {
-                    background-color: navy;
+                &.enviar {
+                    padding: 12px;
+                    font-size: 16px;
+                    border-radius: 5px;
+                    margin-top: 5px;
+                    background-color: cornflowerblue;
                     color: white;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: navy;
+                    }
+                }
+
+                &.fechar {
+                    padding: 12px;
+                    font-size: 16px;
+                    border-radius: 5px;
+                    margin-top: 5px;
+                    background-color: red;
+                    color: white;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: rgb(196, 4, 4);
+                    }
                 }
             }
+
 
             .span-requerimentos {
                 display: none;
