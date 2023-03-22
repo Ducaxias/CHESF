@@ -1,28 +1,29 @@
 header {
-    width: 1350;
-    height: 80px;
-    background: white;
-    position: sticky;
-    transition: background-color 0.4s ease-in-out;
 
+    display: flex;
+    position: fixed;
+    gap: 765px;
+    
+    .logo{
+        margin-left: 55px;
+        margin-top: 0px;
+        font-size: 30px;
+    }
+ 
     nav {
-        position: flex;
-        margin: 30px;
-        display: flex;
-        justify-content: space-between;
-        width: 1300px;
-        height: 48px;
 
-        .nav-links ul {
+        ul {
+            width:auto;
+            height: 86px;
             display: flex;
             list-style: none;
-            position: relative;
-            top: -15;
+            align-items: center;
 
             li {
                 margin: 0 25px;
 
                 a {
+                    font-size: 18px;
                     font-weight: 600;
 
                     &:hover {

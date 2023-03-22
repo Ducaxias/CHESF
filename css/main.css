@@ -1,31 +1,80 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 120px;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #dddddd;
+}
+
+::-webkit-scrollbar-thumb {
+  background: cornflowerblue;
+}
+
+body {
+  width: 100%;
+}
+
 header {
-  width: 1350;
-  height: 80px;
-  background: white;
-  position: sticky;
-  transition: background-color 0.4s ease-in-out;
+  width: 100%;
+  height: 12%;
+  z-index: 10;
 }
-header nav {
-  position: flex;
-  margin: 30px;
+
+main {
+  width: 100%;
+  height: 60%;
+  padding: 5px;
+  z-index: 0;
+  margin-bottom: 40px;
+}
+
+footer {
+  width: 100%;
+  height: 28%;
+  z-index: 0;
+}
+
+header {
   display: flex;
-  justify-content: space-between;
-  width: 1300px;
-  height: 48px;
+  position: fixed;
+  gap: 765px;
 }
-header nav .nav-links ul {
+header .logo {
+  margin-left: 55px;
+  margin-top: 0px;
+  font-size: 30px;
+}
+header nav ul {
+  width: auto;
+  height: 86px;
   display: flex;
   list-style: none;
-  position: relative;
-  top: -15;
+  align-items: center;
 }
-header nav .nav-links ul li {
+header nav ul li {
   margin: 0 25px;
 }
-header nav .nav-links ul li a {
+header nav ul li a {
+  font-size: 18px;
   font-weight: 600;
 }
-header nav .nav-links ul li a:hover {
+header nav ul li a:hover {
   color: cornflowerblue;
 }
 header nav a {
@@ -40,36 +89,17 @@ header nav a.logo {
   margin: 0px 0px 0px 20px;
 }
 
-@media (max-width: 1024px) {
-  header {
-    width: 870px;
-  }
-  header nav {
-    width: 980px;
-    margin: 20px;
-  }
-}
-main {
-  width: 1250px;
-  height: 2160px;
-  background: white;
-  z-index: 0;
-}
 main div.Inicio {
-  width: 1300;
-  height: 570px;
+  height: 720px;
 }
 main div.Inicio section {
   position: relative;
-  top: 350px;
+  top: 480px;
   margin: 0 50px;
 }
-main div.Inicio section h1 {
-  font: 32px;
+main div.Inicio section article h1 {
+  font-size: 26px;
   font-weight: 600px;
-}
-main div.Inicio section article {
-  width: 1200px;
 }
 main div.Inicio section article p {
   font-size: 20px;
@@ -80,20 +110,15 @@ main div.Inicio section article p {
 main div.Inicio section article p a {
   color: cornflowerblue;
 }
-main div.Informacao {
-  width: 1300px;
-  height: 720px;
-}
 main div.Informacao section {
-  position: relative;
-  margin: 0 50px;
-}
-main div.Informacao section h1 {
-  font: 32px;
-  font-weight: 600px;
+  margin: 40px 50px;
 }
 main div.Informacao section article {
-  width: 1200px;
+  margin-bottom: 50px;
+}
+main div.Informacao section article h1 {
+  font-size: 26px;
+  font-weight: 600px;
 }
 main div.Informacao section article p {
   font-size: 20px;
@@ -112,20 +137,32 @@ main div.Informacao section article ul li {
   text-align: justify;
   margin: 20px 0px;
 }
-main div.Visite-nos {
-  width: 1300px;
-  height: 720px;
-}
 main div.Visite-nos section {
-  position: relative;
   margin: 0 50px;
 }
-main div.Visite-nos section h1 {
-  font: 32px;
-  font-weight: 600px;
+main div.Visite-nos section div.buttonForms {
+  height: 100px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
 }
-main div.Visite-nos section article {
-  width: 1200px;
+main div.Visite-nos section div.buttonForms button {
+  height: 60px;
+  padding: 12px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 5px;
+  margin-top: 5px;
+  background-color: cornflowerblue;
+  cursor: pointer;
+}
+main div.Visite-nos section div.buttonForms button:hover {
+  background-color: navy;
+  color: white;
+}
+main div.Visite-nos section article h1 {
+  font-size: 26px;
+  font-weight: 600px;
 }
 main div.Visite-nos section article p {
   font-size: 20px;
@@ -144,58 +181,15 @@ main div.Visite-nos section article ul li {
   text-align: justify;
   margin: 20px 0px;
 }
-main div.Visite-nos section article button {
-  padding: 12px;
-  font-size: 16px;
-  border-radius: 5px;
-  margin-top: 5px;
-  background-color: cornflowerblue;
-  cursor: pointer;
-  position: absolute;
-  top: 120px;
-  left: 500px;
-}
-main div.Visite-nos section article button:hover {
-  background-color: navy;
-  color: white;
-}
 
-@media (min-width: 1024px) {
-  main {
-    width: 870px;
-    height: 2160px;
-  }
-  main div.Inicio {
-    width: 870px;
-  }
-  main div.Inicio section article {
-    width: 850px;
-  }
-  main div.Informacao {
-    width: 870px;
-    height: 800px;
-  }
-  main div.Informacao section article {
-    width: 850px;
-  }
-  main div.Visite-nos {
-    width: 870px;
-  }
-  main div.Visite-nos section article {
-    width: 850px;
-  }
-}
 footer {
-  width: 1349px;
-  height: 249px;
   background: cornflowerblue;
 }
 footer div {
-  width: 400px;
-  height: 85px;
-  position: relative;
-  bottom: -50px;
-  left: 30px;
+  display: flex;
+  height: 200px;
+  margin-left: 55px;
+  padding-top: 10px;
 }
 footer div.Ideal .logo {
   font-size: 36px;
@@ -207,31 +201,16 @@ footer div.Ideal p {
   color: white;
 }
 footer div.Direitos {
-  width: 400px;
-  height: 10px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+}
+footer div.Direitos p {
   font-size: 10px;
   font-weight: 300;
   color: white;
-  position: relative;
-  bottom: -110px;
-  left: 550px;
 }
 
-@media (max-width: 1024px) {
-  footer {
-    width: 1024px;
-  }
-  footer.Direitos {
-    width: 100px;
-    height: 10px;
-    font-size: 10px;
-    font-weight: 300;
-    color: white;
-    position: relative;
-    bottom: -110px;
-    left: 150px;
-  }
-}
 div.modal {
   width: 1346px;
   height: 720px;
@@ -315,17 +294,6 @@ div.modal .conteiner form .span-requerimentos {
 }
 div.modal {
   animation: modal 0.3s;
-}
-
-* {
-  margin: 0px;
-  padding: 0px;
-  outline: none;
-  border: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  text-rendering: optimizeLegibility;
 }
 
 /*# sourceMappingURL=main.css.map */
