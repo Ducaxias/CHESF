@@ -53,7 +53,7 @@ footer {
 header {
   display: flex;
   position: fixed;
-  gap: 700px;
+  gap: 580px;
 }
 header .logo {
   margin-left: 55px;
