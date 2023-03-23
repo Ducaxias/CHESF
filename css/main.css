@@ -54,12 +54,13 @@ header {
   display: flex;
   position: fixed;
   gap: 620px;
-  background-color: #eeeeee;
+  background-color: cornflowerblue;
 }
 header .logo {
   margin-left: 55px;
   margin-top: 0px;
   font-size: 30px;
+  cursor: pointer;
 }
 header nav ul {
   width: auto;
@@ -74,20 +75,8 @@ header nav ul li {
 header nav ul li a {
   font-size: 18px;
   font-weight: 600;
-}
-header nav ul li a:hover {
-  color: cornflowerblue;
-}
-header nav a {
-  color: black;
+  color: white;
   text-transform: uppercase;
-}
-header nav a.logo {
-  position: relative;
-  top: -10px;
-  font-size: 32px;
-  font-weight: bold;
-  margin: 0px 0px 0px 20px;
 }
 
 main div.Inicio {

@@ -3,12 +3,13 @@ header {
     display: flex;
     position: fixed;
     gap: 620px;
-    background-color: #eeeeee;
+    background-color: cornflowerblue;
     
     .logo{
         margin-left: 55px;
         margin-top: 0px;
         font-size: 30px;
+        cursor: pointer;
     }
  
     nav {
@@ -26,24 +27,9 @@ header {
                 a {
                     font-size: 18px;
                     font-weight: 600;
-
-                    &:hover {
-                        color: cornflowerblue;
-                    }
+                    color: white;
+                    text-transform: uppercase;
                 }
-            }
-        }
-
-        a {
-            color: black;
-            text-transform: uppercase;
-
-            &.logo {
-                position: relative;
-                top: -10px;
-                font-size: 32px;
-                font-weight: bold;
-                margin: 0px 0px 0px 20px;
             }
         }
     }
