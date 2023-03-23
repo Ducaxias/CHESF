@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 640px;
+    display: grid;
+    place-items: center center;
+    gap: 180px;
+}
+
+form{
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    height: 5%;
+}
+
+footer div.Buttons{
+    display: flex;
+    flex-direction: row;
+}
