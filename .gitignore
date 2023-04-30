@@ -1,0 +1,4 @@
+#ignore scss
+*.scss
+#ignore css.map
+*.css.map
