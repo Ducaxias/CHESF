@@ -61,6 +61,7 @@ header .logo {
   margin-top: 0px;
   font-size: 30px;
   cursor: pointer;
+  color: white;
 }
 header nav ul {
   width: auto;
@@ -223,7 +224,8 @@ div.modal .conteiner h1 {
   text-align: center;
   margin-bottom: 12px;
 }
-div.modal .conteiner form {
+
+form {
   display: flex;
   flex-direction: column;
   padding: 12px;
@@ -233,7 +235,7 @@ div.modal .conteiner form {
   width: 400px;
   height: 600px;
 }
-div.modal .conteiner form .inputs {
+form .inputs {
   padding: 8px 5px;
   box-sizing: border-box;
   border-radius: 5px;
@@ -242,10 +244,10 @@ div.modal .conteiner form .inputs {
   width: 100%;
   transition: 0.3s;
 }
-div.modal .conteiner form .inputs:focus {
+form .inputs:focus {
   border-color: navy;
 }
-div.modal .conteiner form button.enviar {
+form button.enviar {
   padding: 12px;
   font-size: 16px;
   border-radius: 5px;
@@ -254,10 +256,10 @@ div.modal .conteiner form button.enviar {
   color: white;
   cursor: pointer;
 }
-div.modal .conteiner form button.enviar:hover {
+form button.enviar:hover {
   background-color: navy;
 }
-div.modal .conteiner form button.fechar {
+form button.fechar {
   padding: 12px;
   font-size: 16px;
   border-radius: 5px;
@@ -266,11 +268,8 @@ div.modal .conteiner form button.fechar {
   color: white;
   cursor: pointer;
 }
-div.modal .conteiner form button.fechar:hover {
+form button.fechar:hover {
   background-color: rgb(196, 4, 4);
-}
-div.modal .conteiner form .span-requerimentos {
-  display: none;
 }
 
 @keyframes modal {
