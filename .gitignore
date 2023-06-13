@@ -1,4 +1,5 @@
-#ignore scss
-*.scss
-#ignore css.map
+### Sass ###
+.sass-cache/
 *.css.map
+*.sass.map
+*.scss.map
