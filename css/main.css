@@ -9,6 +9,11 @@
   text-rendering: optimizeLegibility;
 }
 
+:root {
+  --corprimaria: #6495ed;
+  --corsegundaria: #fff;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 120px;
@@ -38,7 +43,7 @@ header {
 
 main {
   width: 100%;
-  height: 60%;
+  height: 1700px;
   padding: 5px;
   z-index: 0;
   margin-bottom: 40px;
@@ -51,238 +56,137 @@ footer {
 }
 
 header {
-  display: flex;
   position: fixed;
-  gap: 620px;
-  background-color: cornflowerblue;
+  background-color: var(--corprimaria);
 }
-header .logo {
-  margin-left: 55px;
-  margin-top: 0px;
-  font-size: 30px;
-  cursor: pointer;
-  color: white;
-}
-header nav ul {
-  width: auto;
-  height: 86px;
+header nav {
   display: flex;
-  list-style: none;
+  justify-content: space-between;
+  margin: 10px 35px 10px 35px;
   align-items: center;
 }
-header nav ul li {
-  margin: 0 25px;
+header nav .logo {
+  color: var(--corsegundaria);
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-weight: bold;
 }
-header nav ul li a {
-  font-size: 18px;
-  font-weight: 600;
-  color: white;
-  text-transform: uppercase;
+header nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+header nav ul a {
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-main div.Inicio {
-  height: 720px;
-}
-main div.Inicio section {
+main section {
+  margin: 20px;
   position: relative;
-  top: 480px;
-  margin: 0 50px;
+  top: 300px;
 }
-main div.Inicio section article h1 {
-  font-size: 26px;
-  font-weight: 600px;
-}
-main div.Inicio section article p {
-  font-size: 20px;
-  text-indent: 20px;
-  text-align: justify;
-  margin: 25px 0px;
-}
-main div.Inicio section article p a {
-  color: cornflowerblue;
-}
-main div.Informacao section {
-  margin: 40px 50px;
-}
-main div.Informacao section article {
+main section.sobre {
+  height: 200px;
   margin-bottom: 50px;
 }
-main div.Informacao section article h1 {
-  font-size: 26px;
-  font-weight: 600px;
+main section article {
+  margin: 20px 0px 20px 0px;
 }
-main div.Informacao section article p {
+main section h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 4rem;
+}
+main section p {
   font-size: 20px;
-  text-indent: 20px;
   text-align: justify;
-  margin: 25px 0px;
+  text-indent: 15px;
 }
-main div.Informacao section article p a {
-  color: cornflowerblue;
+main section p link {
+  color: var(--corprimaria);
 }
-main div.Informacao section article ul {
+main section ul {
   list-style: none;
-}
-main div.Informacao section article ul li {
   font-size: 20px;
   text-align: justify;
-  margin: 20px 0px;
 }
-main div.Visite-nos section {
-  margin: 0 50px;
-}
-main div.Visite-nos section div.buttonForms {
-  height: 100px;
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-}
-main div.Visite-nos section div.buttonForms button {
-  height: 60px;
-  padding: 12px;
-  font-size: 20px;
-  font-weight: 500;
-  border-radius: 5px;
-  margin-top: 5px;
-  background-color: cornflowerblue;
-  cursor: pointer;
-}
-main div.Visite-nos section div.buttonForms button:hover {
-  background-color: navy;
-  color: white;
-}
-main div.Visite-nos section article h1 {
-  font-size: 26px;
-  font-weight: 600px;
-}
-main div.Visite-nos section article p {
-  font-size: 20px;
-  text-indent: 20px;
-  text-align: justify;
-  margin: 25px 0px;
-}
-main div.Visite-nos section article p a {
-  color: cornflowerblue;
-}
-main div.Visite-nos section article ul {
-  list-style: none;
-}
-main div.Visite-nos section article ul li {
-  font-size: 20px;
-  text-align: justify;
-  margin: 20px 0px;
+main section h2, main section p {
+  margin-bottom: 20px;
 }
 
 footer {
-  background: cornflowerblue;
+  background-color: var(--corprimaria);
+  padding: 5px;
 }
-footer div {
+footer section {
   display: flex;
-  height: 200px;
-  margin-left: 55px;
-  padding-top: 10px;
+  justify-content: space-around;
+  gap: 20px;
 }
-footer div.Ideal .logo {
-  font-size: 36px;
-  font-weight: 600;
-  color: white;
+footer section article.empresa {
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
 }
-footer div.Ideal p {
-  font-size: 20px;
-  color: white;
-}
-footer div.Direitos {
-  height: 30px;
+footer section article.empresa .RedeSocial {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 5px;
+  margin-top: 10px;
 }
-footer div.Direitos p {
-  font-size: 10px;
-  font-weight: 300;
-  color: white;
-}
-
-div.modal {
-  width: 1346px;
-  height: 720px;
-  background-color: transparent;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  z-index: 2;
-  top: 1320px;
-}
-div.modal .conteiner {
-  background-color: white;
-  border-radius: 10px;
-  min-width: 30%;
-  overflow: auto;
-  z-index: 1000;
-}
-div.modal .conteiner h1 {
-  text-align: center;
-  margin-bottom: 12px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  padding: 12px;
-  gap: 12px;
-  border: 2px solid cornflowerblue;
-  border-radius: 10px;
-  width: 400px;
-  height: 600px;
-}
-form .inputs {
-  padding: 8px 5px;
-  box-sizing: border-box;
-  border-radius: 5px;
-  border: 2px solid cornflowerblue;
-  color: black;
-  width: 100%;
+footer section article.empresa .RedeSocial svg {
   transition: 0.3s;
 }
-form .inputs:focus {
-  border-color: navy;
+footer section article.empresa .RedeSocial svg:hover {
+  fill: var(--corprimaria);
+  stroke: white;
 }
-form button.enviar {
-  padding: 12px;
-  font-size: 16px;
+footer section article.empresa .logo {
+  color: var(--corsegundaria);
+  letter-spacing: 2px;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+footer section article.empresa .logo::after {
+  content: "";
   border-radius: 5px;
-  margin-top: 5px;
-  background-color: cornflowerblue;
+  background: white;
+  display: block;
+  width: 200px;
+  height: 3px;
+  margin: 0 auto;
+}
+footer section article.linksuteis {
+  width: 370px;
   color: white;
+  letter-spacing: 3px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+footer section article.linksuteis h5 {
+  font-size: 20px;
+}
+footer section article.linksuteis ul {
+  margin-top: 10px;
+  list-style: none;
+}
+footer section article.linksuteis ul li {
+  margin: 5px 0px 0px 5px;
   cursor: pointer;
 }
-form button.enviar:hover {
-  background-color: navy;
+footer section article.linksuteis ul li:hover {
+  font-weight: bold;
 }
-form button.fechar {
-  padding: 12px;
-  font-size: 16px;
-  border-radius: 5px;
-  margin-top: 5px;
-  background-color: red;
+footer section p {
   color: white;
-  cursor: pointer;
-}
-form button.fechar:hover {
-  background-color: rgb(196, 4, 4);
-}
-
-@keyframes modal {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -60, 0);
-  }
-  to {
-    opacity: 1;
-  }
-}
-div.modal {
-  animation: modal 0.3s;
+  font-size: 12px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -9,6 +9,11 @@
     text-rendering: optimizeLegibility;
 }
 
+:root{
+    --corprimaria: #6495ed;
+    --corsegundaria: #fff;
+}
+
 html{
     scroll-behavior: smooth;
     scroll-padding-top: 120px;
@@ -39,7 +44,7 @@ header{
 
 main{
     width: 100%;
-    height: 60%;
+    height: 1700px;
     padding: 5px;
     z-index: 0;
     margin-bottom: 40px;
@@ -51,7 +56,7 @@ footer{
     z-index: 0;
 }
 
-@import 'header','base','footer','formulario','animação';
+@import 'header','section','footer';
 
 
 
