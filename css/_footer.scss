@@ -20,14 +20,26 @@ footer{
                     gap: 5px;
                     margin-top: 10px;
                     
-                    svg{
+                    a{
+                        width: 50px;
+                        height: 50px;
+                        padding: 5px;
                         transition: 0.3s;
-                         
+                        border-radius: 50%;
+                        background-color: transparent;
+
                         &:hover{
-                             fill: var(--corprimaria);
-                             stroke: white;
-                         }
-                     }
+                            background-color: white;
+                        }
+
+                        svg{
+                            transition: 0.3s;
+                             
+                            &:hover{
+                                 fill: var(--corprimaria);
+                             }
+                        }
+                    }
                 }
 
                 .logo{

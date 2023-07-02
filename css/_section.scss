@@ -1,9 +1,6 @@
 main{
-
     section{
         margin: 20px;
-        position: relative;
-        top: 300px;
 
         &.sobre{
             height: 200px;
@@ -12,6 +9,11 @@ main{
 
         article{
             margin: 20px 0px 20px 0px;
+
+            img{
+                width: 50%;
+                height: 50%;
+            }
         }
     
         h2{
