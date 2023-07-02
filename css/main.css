@@ -219,4 +219,53 @@ footer section p {
   background-color: white;
 }
 
+.container_galeria {
+  display: flex;
+  width: 100%;
+  height: 450px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.container_galeria .container_imagens {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+  height: 800px;
+}
+.container_galeria .slider {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  border-radius: 10px;
+}
+.container_galeria .on {
+  opacity: 1;
+}
+.container_galeria button {
+  width: 40px;
+  height: 40px;
+  border: transparent;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+}
+.container_galeria button img {
+  margin: 10px;
+}
+.container_galeria button:hover {
+  animation: surgimento 0.2s forwards;
+  border: #000 0px solid;
+}
+@keyframes surgimento {
+  from {
+    border: #000 0px solid;
+  }
+  to {
+    border: #000 3px solid;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
