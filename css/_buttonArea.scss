@@ -1,0 +1,16 @@
+.buttonForms{
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    background-color: var(--corprimaria);
+
+    button{
+        width: 90px;
+        height: 30px;
+        position: relative;
+        top: 10px;
+        left: 600px;
+        border-radius: 15px;
+        background-color: white;
+    }
+}
