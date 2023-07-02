@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet" />
   <!---->
+  <script src="js/script.js" defer></script>
   <title>CHESF</title>
 </head>
 
@@ -47,7 +48,16 @@
     <section  id="Galeria">
       <article>
         <h2>Galeria</h2>
-        <img src="Assets/1917px-Rio_São_Francisco_e_a_Usina_hidrelétrica_de_Paulo_Afonso_IV.jpeg" alt="Imagem da hidroeletrica">
+        <div class="container_galeria">
+          <button id="btn_anterior"><img src="Assets/anterior.svg" alt="voltar para imagem anterior"></button>
+          <div class="container_imagens">
+            <img src="Assets/1917px-Rio_São_Francisco_e_a_Usina_hidrelétrica_de_Paulo_Afonso_IV.jpeg" alt="Imagem da hidroeletrica" class="slider on">
+            <img src="Assets/Barragem_de_Sobradinho-BA.jpeg" alt="Imagem da Barragem" class="slider">
+            <img src="Assets/Comportas_da_Usina_Hidrelétrica_de_Xingó.jpeg" alt="Imagem das comportas" class="slider">
+          </div>
+          <button id="btn_próximo"><img src="Assets/próximo.svg" alt="próxima imagem"></button>
+        </div>
+
       </article>
     </section>
     <section id="Informações">
@@ -103,6 +113,24 @@
       <div class="buttonForms">
         <button onclick=" window.location.href = 'sub/forms.html'">Formulário</button>
       </div>
+      <form>
+        <!---->
+        <label>Nome</label>
+        <input type="text" placeholder="Digite seu nome" class="inputs" />
+        <!---->
+        <label>Email</label>
+        <input type="email" placeholder="Digite seu email" class="inputs" />
+        <!---->
+        <label>Senha</label>
+        <input type="password" placeholder="Digite sua senha" class="inputs"/>
+        <!---->
+        <label>Repita senha</label>
+        <input type="password" placeholder="Repita a senha"class="inputs"/>
+    </form>
+    <div class="buttons">
+        <button type="submit" class="enviar">Enviar</button>
+        <button onclick="fechar()" class="fechar">Cancelar</button>
+    </div>
       <article>
         <h2>Regras</h2>
         <p>Seguem as regras de visitação:</p>
