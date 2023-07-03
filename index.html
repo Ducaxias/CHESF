@@ -57,7 +57,6 @@
           </div>
           <button id="btn_próximo"><img src="Assets/próximo.svg" alt="próxima imagem"></button>
         </div>
-
       </article>
     </section>
     <section id="Informações">
@@ -106,31 +105,34 @@
         <p>
           Para realizar a visitação em alguma das unidades da CHESF
           espalhadas pelo país. Preencha o formulário de cadastro.
-          Após finalizar o processo fique de olho na
-          <a href="#">página de visitação</a>.
+          Após finalizar o processo fique de olho no seu email.
         </p>
       </article>
-      <div class="buttonForms">
-        <button onclick=" window.location.href = 'sub/forms.html'">Formulário</button>
-      </div>
-      <form>
+      
+      <form class="formulário">
         <!---->
         <label>Nome</label>
-        <input type="text" placeholder="Digite seu nome" class="inputs" />
+        <input type="text" placeholder="Digite seu nome completo" class="inputs"/>
         <!---->
         <label>Email</label>
-        <input type="email" placeholder="Digite seu email" class="inputs" />
+        <input type="email" placeholder="Digite seu email" class="inputs"/>
         <!---->
-        <label>Senha</label>
-        <input type="password" placeholder="Digite sua senha" class="inputs"/>
+        <label>Unidade</label>
+        <select name="Unidade" id="">
+          <option value="">Escolha uma unidade</option>
+          <option value="01">Sobradinho</option>
+          <option value="02">Xingó</option>
+          <option value="03">São Francisco</option>
+          <option value="04">Luiz Gonzaga</option>
+        </select>
         <!---->
-        <label>Repita senha</label>
-        <input type="password" placeholder="Repita a senha"class="inputs"/>
-    </form>
-    <div class="buttons">
-        <button type="submit" class="enviar">Enviar</button>
-        <button onclick="fechar()" class="fechar">Cancelar</button>
-    </div>
+        <label>Data da visita</label>
+        <input type="datetime-local" name="Data">
+        <div class="buttons">
+          <button>Enviar</button>
+          <button>Cancelar</button>
+        </div>        
+      </form>
       <article>
         <h2>Regras</h2>
         <p>Seguem as regras de visitação:</p>
@@ -157,8 +159,6 @@
         </ul>
       </article>
     </section>
-    </div>
-    </div>
   </main>
   <footer>
     <section>
