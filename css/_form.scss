@@ -1,0 +1,42 @@
+form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 30px;
+    position: relative;
+    left: 30rem;
+
+    input, label{
+        margin:5px 0px 5px 0px
+    }
+
+    input{
+        border: 2px solid #000;
+        border-radius: 15px;
+        padding: 5px 10px 5px 10px;
+    }
+
+    select{
+        background-color: transparent;
+        border: 2px solid #000;
+        border-radius: 15px;
+        padding: 5px 10px 5px 10px;
+    }
+
+    .buttons{
+        display: flex;
+        gap: 17px;
+
+        button{
+            width: 140px;
+            height: 40px;
+            padding: 3px;
+            background-color: transparent;
+            cursor: pointer;
+            margin-top: 20px;
+            border: 2px solid #000;
+            border-radius: 20px;
+        }
+    }
+
+}
