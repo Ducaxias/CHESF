@@ -1,10 +1,17 @@
 main{
+    @include responsividade(médio){
+        .sobre{
+            height: 250px;
+            margin-bottom: 20px;
+        }
+    }
+
     section{
         margin: 20px;
 
         &.sobre{
-            height: 200px;
-            margin-bottom: 50px;
+            height: 250px;
+            margin-bottom: 60px ;
         }
 
         article{
