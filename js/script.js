@@ -34,3 +34,47 @@ function prevSlider(){
 
 btn_prox.addEventListener('click', nextSlider)
 btn_prev.addEventListener('click', prevSlider)
+
+class MobileNavBar{
+    constructor( menu, links, nav){
+        this.mobileMenu = document.querySelector(menu);
+        this.navList = document.querySelector(links);
+        this.navLinks = document.querySelectorAll(nav);
+        this.activeClass = "ativo"
+    
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    animateLinks(){
+        this.navLinks.forEach((link) =>{
+            link.style.animation
+            ? (link.style.animation = "")
+            : (link.style.animation = "surgir 0.3s ease forward 0.3s")
+        });
+    }
+    
+
+    handleClick(){
+        this.navList.classList.toggle(this.activeClass);
+        this.mobileMenu.classList.toggle(this.activeClass);
+    }
+
+    addClickEvent(){
+        this.mobileMenu.addEventListener("click", this.handleClick);
+    }
+
+    init(){
+        if(this.mobileMenu){
+            this.addClickEvent();
+        }
+        return this;
+    }
+}
+
+const mobileNavBar = new MobileNavBar(
+    ".menu",
+    ".links",
+    "nav ul li"
+)
+
+mobileNavBar.init();
