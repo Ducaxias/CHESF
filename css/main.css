@@ -95,8 +95,6 @@ header nav .logo {
   }
   header nav ul li {
     margin-left: 0;
-    opacity: 0;
-    animation: surgir 0.3s forwards ease-in 0.3s;
   }
   header nav .menu {
     cursor: pointer;

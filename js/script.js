@@ -45,15 +45,6 @@ class MobileNavBar{
         this.handleClick = this.handleClick.bind(this);
     }
 
-    animateLinks(){
-        this.navLinks.forEach((link) =>{
-            link.style.animation
-            ? (link.style.animation = "")
-            : (link.style.animation = "surgir 0.3s ease forward 0.3s")
-        });
-    }
-    
-
     handleClick(){
         this.navList.classList.toggle(this.activeClass);
         this.mobileMenu.classList.toggle(this.activeClass);
