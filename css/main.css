@@ -155,17 +155,19 @@ header .menu div {
 }
 
 @media (max-width: 900px) {
-  main .sobre {
-    height: 250px;
-    margin-bottom: 20px;
+  main section h2 {
+    font-size: 32px;
+  }
+  main section p {
+    font-size: 16px;
   }
 }
 main section {
   margin: 20px;
 }
 main section.sobre {
-  height: 250px;
-  margin-bottom: 60px;
+  height: 325px;
+  margin-bottom: 30px;
 }
 main section article {
   margin: 20px 0px 20px 0px;
@@ -287,13 +289,30 @@ footer section p {
   font-size: 12px;
 }
 
+@media (max-width: 900px) {
+  form {
+    left: 15rem;
+    right: 0px;
+  }
+}
+@media (max-width: 600px) {
+  form {
+    left: 7rem;
+    right: 0px;
+  }
+}
+@media (max-width: 500px) {
+  form {
+    left: 0rem;
+    right: 0px;
+  }
+}
 form {
   display: flex;
   flex-direction: column;
   width: 300px;
   margin: 30px;
   position: relative;
-  left: 30rem;
 }
 form input, form label {
   margin: 5px 0px 5px 0px;

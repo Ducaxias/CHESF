@@ -65,6 +65,9 @@ footer{
     @if($Quebra == pequeno){
         @media (max-width: 600px) {@content};
     }
+    @if($Quebra == minusculo){
+        @media (max-width:500px) {@content}
+    }
 }
 
 @import 'header','section','footer','form','galeria';
